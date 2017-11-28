@@ -1,5 +1,9 @@
 # Monitoring Overview
 
+Monitoring in a container app world
+
+---
+
 ## Roll your own items
    - snmp, JMS
     - downsides
@@ -7,7 +11,8 @@
 
 ---
 
-## Traditional (mostly JVM)
+## Traditional 
+### (mostly JVM)
    - APM
    - New Relic
    - AppDynamics
@@ -21,6 +26,14 @@
 
 ## metrics
    - whitebox vs blackbox
+
+---
+
+## Prometheus deep dive
+
+---
+
+# Demo
 
 ---
 
