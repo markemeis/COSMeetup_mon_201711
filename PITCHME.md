@@ -29,7 +29,11 @@ Monitoring in a container app world
 
 ---
 
-# Sysdig
+## Sysdig
+- Linux kernel instrumentation
+- ["strace + tcpdump + htop + iftop + lsof + ...awesome sauce"](https://github.com/draios/sysdig)
+- fantastic debugging tool
+- Commercial product for aggregation/display
 
 ---
 
@@ -38,7 +42,7 @@ Monitoring in a container app world
 - Rich support for collection of infrastructure and third party metrics
 - Hosted by CNCF
 - Default monitoring solution for Kubernetes
-- Docker plans to integrate (https://github.com/moby/moby/issues/27307)
+- [Docker plans to integrate](https://github.com/moby/moby/issues/27307)
 
 ---
 
