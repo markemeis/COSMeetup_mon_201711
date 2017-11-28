@@ -1,37 +1,37 @@
-Monitoring Overview
+# Monitoring Overview
 
-# Roll your own items
+## Roll your own items
    - snmp, JMS
     - downsides
      - sprawl and doing this.  Maybe in a base layer?
 
 ---
 
-# Traditional (mostly JVM)
+## Traditional (mostly JVM)
    - APM
    - New Relic
    - AppDynamics
 
 ---
 
-# logging
+## logging
    - Sumo, Splunk, Elastic Stack,
 
 ---
 
-# metrics
+## metrics
    - whitebox vs blackbox
 
 ---
 
-# What to do with all that data? 
+## What to do with all that data? 
 
 - Freshtracks
 - Prelert (Part of elastic)
 
 ---
  
-# Key Takeaways or what's right for my project?
+## Key Takeaways or what's right for my project?
 - Are you using it for debugging your app?
    - Logging
    - Whitebox
