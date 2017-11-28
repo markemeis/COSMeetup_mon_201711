@@ -33,7 +33,11 @@ Monitoring in a container app world
 - Linux kernel instrumentation
 - ["strace + tcpdump + htop + iftop + lsof + ...awesome sauce"](https://github.com/draios/sysdig)
 - fantastic debugging tool
-- Commercial product for aggregation/display
+- [Commercial product for aggregation/display](https://sysdig.com/product/monitor/)
+
+Note:
+- trace syscalls by container, etc.
+- author of WireShark
 
 ---
 
