@@ -101,6 +101,13 @@ Note:
 - Grafana
   - built-in support to query Prometheus
   - define dashboards to display data from Prometheus
+
+---
+
+## Resources
+- [Prometheus Docs](https://prometheus.io/docs/introduction/overview/)
+- [Prometheus with Docker](https://stefanprodan.com/2016/a-monitoring-solution-for-docker-hosts-containers-and-containerized-services/)
+
 ---
 
 # Demo
