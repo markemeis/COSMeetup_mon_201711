@@ -51,9 +51,9 @@ Monitoring in a container app world
 
 ---
 
-## Prometheus Black Box Docker Monitoring
-
 ![DockerPrometheus](assets/prometheus-on-docker.png)
+
+---
 
 ## Prometheus Server
 - Stores time-series data by metric name and key/value labels
