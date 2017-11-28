@@ -62,7 +62,7 @@ Monitoring in a container app world
   - static configuration or discovery
 - Triggers alerts via configurable rules
 
-Notes:
+Note:
 Configurable discovery for DNS, EC2, Consul catalog API, GCE, Kubernetes, Azure and many others
 
 ---
@@ -80,7 +80,7 @@ Configurable discovery for DNS, EC2, Consul catalog API, GCE, Kubernetes, Azure 
   - FreeBSD Kernel
   - many others
 
-Notes:
+Note:
 
 - Databases: MySQL, memcached, MongoDB, MSSQL, PostgreSQL, ...
 - Messaging: Kafka, RabbitMQ, Beanstalkd, NATS, ...
