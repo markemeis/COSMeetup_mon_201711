@@ -33,7 +33,7 @@ Monitoring in a container app world
 
 ---
 
-# Prometheus
+## Prometheus
 - Collect and store time-series metrics
 - Rich support for collection of infrastructure and third party metrics
 - Hosted by CNCF
@@ -67,7 +67,7 @@ Configurable discovery for DNS, EC2, Consul catalog API, GCE, Kubernetes, Azure 
 
 ---
 
-## Third Party Data
+### Third Party Data
 - Exporters
   - Node Exporter: hardware and OS Metrics for *NIX
   - WMI: Windows metrics
