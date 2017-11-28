@@ -11,7 +11,7 @@ Monitoring in a container app world
 
 ---
 
-## Traditional 
+## Traditional
 ### (mostly JVM)
    - APM
    - New Relic
@@ -29,21 +29,83 @@ Monitoring in a container app world
 
 ---
 
-## Prometheus deep dive
+# Sysdig
 
+---
+
+# Prometheus
+- Collect and store time-series metrics
+- Rich support for collection of infrastructure and third party metrics
+- Hosted by CNCF
+- Default monitoring solution for Kubernetes
+- Docker plans to integrate (https://github.com/moby/moby/issues/27307)
+
+---
+
+## Prometheus "Ecosystem" Overview
+- Prometheus Server
+- Alert Manager
+- Exporters
+- Client Libraries
+- Display
+
+---
+
+## Prometheus Black Box Docker Monitoring
+
+![DockerPrometheus](assets/prometheus-on-docker.png)
+
+## Prometheus Server
+- Stores time-series data by metric name and key/value labels
+  - query language for analyzing stored data
+- "Scrapes" (pulls) data from targets
+  - static configuration or discovery (DNS, EC2, Consul catalog API, GCE, Kubernetes, Azure, ...)
+- Triggers alerts via configurable rules
+
+---
+
+## Alert Manager
+  - management of alerts from prometheus servers
+  - aggregation, silencing, notification (email, PagerDuty, HipChat, ...)
+
+---
+
+## Exporters
+  - export existing data from third-party systems as Prometheus metrics
+    - Node Exporter: hardware and OS metrics for *NIX (WMI exporter for Windows)
+    - CAdvisor: container level metrics
+    - Databases: MySQL, memcached, MongoDB, MSSQL, PostgreSQL, ...
+    - Messaging: Kafka, RabbitMQ, Beanstalkd, NATS, ...
+    - Storage: Ceph, Gluster, Hadoop HDFS, Lustre, ...
+    - HTTP: Apache, HAProxy, Nginx, ...
+    - APIs: AWS, DigitalOcean, DockerHub, DockerCloud, GitHub, Rancher, ...
+    - Other monitoring systems: AWS CloudWatch, JMX, SNMP, ...
+
+---
+
+## Client Libraries
+- add custom metrics at key points in your implementation
+- "push gateway" can be used to cache metrics from ephemeral or batch jobs that may not be present when data is pulled
+
+---
+
+## Data Display
+- Grafana
+  - built-in support to query Prometheus
+  - define dashboards to display data from Prometheus
 ---
 
 # Demo
 
 ---
 
-## What to do with all that data? 
+## What to do with all that data?
 
 - Freshtracks
 - Prelert (Part of elastic)
 
 ---
- 
+
 ## Key Takeaways or what's right for my project?
 - Are you using it for debugging your app?
    - Logging
@@ -52,5 +114,4 @@ Monitoring in a container app world
    - Blackbox
    - If using a JVM language
       - Add whitebox
- 
- 
+
