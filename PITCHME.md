@@ -59,27 +59,35 @@ Monitoring in a container app world
 - Stores time-series data by metric name and key/value labels
   - query language for analyzing stored data
 - "Scrapes" (pulls) data from targets
-  - static configuration or discovery (DNS, EC2, Consul catalog API, GCE, Kubernetes, Azure, ...)
+  - static configuration or discovery
 - Triggers alerts via configurable rules
 
----
-
-## Alert Manager
-  - management of alerts from prometheus servers
-  - aggregation, silencing, notification (email, PagerDuty, HipChat, ...)
+Notes:
+Configurable discovery for DNS, EC2, Consul catalog API, GCE, Kubernetes, Azure and many others
 
 ---
 
-## Exporters
-  - export existing data from third-party systems as Prometheus metrics
-    - Node Exporter: hardware and OS metrics for *NIX (WMI exporter for Windows)
-    - CAdvisor: container level metrics
-    - Databases: MySQL, memcached, MongoDB, MSSQL, PostgreSQL, ...
-    - Messaging: Kafka, RabbitMQ, Beanstalkd, NATS, ...
-    - Storage: Ceph, Gluster, Hadoop HDFS, Lustre, ...
-    - HTTP: Apache, HAProxy, Nginx, ...
-    - APIs: AWS, DigitalOcean, DockerHub, DockerCloud, GitHub, Rancher, ...
-    - Other monitoring systems: AWS CloudWatch, JMX, SNMP, ...
+## Third Party Data
+- Exporters
+  - Node Exporter: hardware and OS Metrics for *NIX
+  - WMI: Windows metrics
+  - CAdvisor: container metrics
+  - Other monitoring: JMX, SNMP, AWS CloudWatch
+  - many others
+- Directly exposed metrics
+  - Kubernetes
+  - Etcd
+  - FreeBSD Kernel
+  - many others
+
+Notes:
+
+- Databases: MySQL, memcached, MongoDB, MSSQL, PostgreSQL, ...
+- Messaging: Kafka, RabbitMQ, Beanstalkd, NATS, ...
+- Storage: Ceph, Gluster, Hadoop HDFS, Lustre, ...
+- HTTP: Apache, HAProxy, Nginx, ...
+- APIs: AWS, DigitalOcean, DockerHub, DockerCloud, GitHub, Rancher, ...
+- Other monitoring systems: AWS CloudWatch, JMX, SNMP, ...
 
 ---
 
