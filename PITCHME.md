@@ -18,14 +18,18 @@ Monitoring Overview
    - Sumo, Splunk, Elastic Stack,
 
 ---
+
 # metrics
    - whitebox vs blackbox
+
+---
 
 # What to do with all that data? 
 
 - Freshtracks
 - Prelert (Part of elastic)
 
+---
  
 # Key Takeaways or what's right for my project?
 - Are you using it for debugging your app?
