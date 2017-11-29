@@ -5,11 +5,11 @@ Monitoring in a container app world
 ---
 
 ## Definitions & examples
-- Monitoring vs Management |
-- Infrastructure monitoring
+- Monitoring vs Management 
+- Infrastructure monitoring 
    - Nagios, APM AppDynamics, DataDog |
 - Application performance monitoring 
-   - CA APM, AppDynamis, Dynatrace 
+   - CA APM, AppDynamis, Dynatrace |
 
 Note:
 Many combine IT and APM - or could
@@ -22,10 +22,10 @@ Many are on-premise, more and more are moving to SaaS
 ## Definitions & examples (cont)
 - Uptime monitoring 
    - Pingdom |
-- Network monitoring
+- Network monitoring 
    - Munin |
-- SLA
-   - CA APM, FreshTrack
+- SLA 
+   - CA APM, FreshTrack |
 
 Note:
 Many combine IT and APM - or could
