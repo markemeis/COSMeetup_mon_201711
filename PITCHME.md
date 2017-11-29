@@ -6,9 +6,9 @@ Monitoring in a container app world
 
 ## Definitions & examples
 - Monitoring vs Management 
-- Infrastructure monitoring 
+- Infrastructure monitoring |
    - Nagios, APM AppDynamics, DataDog |
-- Application performance monitoring 
+- Application performance monitoring |
    - CA APM, AppDynamis, Dynatrace |
 
 Note:
@@ -21,10 +21,10 @@ Many are on-premise, more and more are moving to SaaS
 
 ## Definitions & examples (cont)
 - Uptime monitoring 
-   - Pingdom |
-- Network monitoring 
+   - Pingdom 
+- Network monitoring |
    - Munin |
-- SLA 
+- SLA |
    - CA APM, FreshTrack |
 
 Note:
@@ -45,7 +45,7 @@ Should logging and monitoring be separate?  When debugging you probably require 
 
 ## Whitebox
 ### inside container monitoring
-- instrumenting your processes
+- Instrumenting your processes
    - snmp, JMX
 
 Note:
@@ -56,7 +56,7 @@ Choose as minimal a client as you can...
 
 ---
 
-## Backbox
+## Blackbox
 - Leveraging your orchestration environment
 
 Note:
