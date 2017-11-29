@@ -43,10 +43,10 @@ Should logging and monitoring be separate?  When debugging you probably require 
 
 ---
 
-## Whitebox
-### inside container monitoring
-- Instrumenting your processes
-   - snmp, JMX
+## Whitebox 
+### Application level metrics
+- SNMP, JMX, etc.
+- Can be included in Blackbox metric colleciton
 
 Note:
 This is an interesting topic.  Many of these violate the single process best practice from 12 Factor apps.
@@ -57,10 +57,17 @@ Choose as minimal a client as you can...
 ---
 
 ## Blackbox
+### AKA Container Monitoring
 - Leveraging your orchestration environment
-
+- Automatic discovery is a must (Emheral containers)
+- 3 levels 
+   - Container Metrics
+   - Orchestrator Metrics
+   - Host metrics
 Note:
-What we will focus on today
+Container - typically cAdvisor
+Orchestrator - Kube State Metrics for Kubernetes natively exposed
+Host - Node exporter
 Using some common tools you can achive a lot of what you ned to meet your SLA - which resorting to whitebox
 
 
@@ -166,6 +173,15 @@ Note:
 - Prelert (Part of elastic)
 
 ---
+
+Note:
+We discussed 4 levels of metrics - FT can correlate them together
+FT build on top of Prometheus
+FT uses the Kubernetes topology to automatically group and present your metrics. 
+FT uses tagging strategies to correlate and aggregate metrics across all four layers. 
+FT provides adaptive thresholding and anomaly detection on each metric individually but also aggregated across the Kubernetes topology.  
+We add machine learning to understand metric relationships between layers and across the topology
+Those relationships allow us to provide actionable alerts not just warn when anomalies come through
 
 ## Key Takeaways or what's right for my project?
 - Blackbox monitoring
