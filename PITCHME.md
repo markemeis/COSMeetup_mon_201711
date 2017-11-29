@@ -4,28 +4,55 @@ Monitoring in a container app world
 
 ---
 
-## Roll your own items
-   - snmp, JMS
-    - downsides
-     - sprawl and doing this.  Maybe in a base layer?
+## Definitions & examples
+- Monitoring vs Management
+- Infrastructure monitoring
+   - Nagios, APM AppDynamics, DataDog
+- Application performance monitoring 
+   - CA APM, AppDynamis, Dynatrace
+- Uptime monitoring 
+   - Pingdom
+- Network monitoring
+   - Munin
+- SLA
+   - CA APM, FreshTrack
+
+Note:
+Many combine IT and APM - or could
+Missing is active management - or more precisly done with other tools
+Alerting - what about anomaly detection 
+Many are on-premise, more and more are moving to SaaS
 
 ---
 
-## Traditional
-### (mostly JVM)
-   - APM
-   - New Relic
-   - AppDynamics
+## Logging
+   - Sumo, Splunk, Elastic Stack
+
+Note:
+Should logging and monitoring be separate?  When debugging you probably require both...
 
 ---
 
-## logging
-   - Sumo, Splunk, Elastic Stack,
+## Whitebox
+### inside container monitoring
+- instrumenting you processes
+   - snmp, JMX
+
+Note:
+This is an interesting topic.  Many of these violate the single process best practice from 12 Factor apps.
+Great for debugging.
+Could use image layers - more dependencies, more potential vulnerabilites, what happens when your WB client needs updating?
+Choose as minimal a client as you can...
 
 ---
 
-## metrics
-   - whitebox vs blackbox
+## Backbox
+- Leveraging your orchestration environment
+
+Note:
+What we will focus on today
+Using some common tools you can achive a lot of what you ned to meet your SLA - which resorting to whitebox
+
 
 ---
 
