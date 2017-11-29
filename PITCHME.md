@@ -65,10 +65,10 @@ Choose as minimal a client as you can...
    - Orchestrator Metrics
    - Host metrics
 Note:
-Container - typically cAdvisor
-Orchestrator - Kube State Metrics for Kubernetes natively exposed
-Host - Node exporter
-Using some common tools you can achive a lot of what you ned to meet your SLA - which resorting to whitebox
+- Container - typically cAdvisor
+- Orchestrator - Kube State Metrics for Kubernetes natively exposed
+- Host - Node exporter
+- Using some common tools you can achive a lot of what you ned to meet your SLA - which resorting to whitebox
 
 
 ---
@@ -157,12 +157,6 @@ Note:
 
 ---
 
-## Resources
-- [Prometheus Docs](https://prometheus.io/docs/introduction/overview/)
-- [Prometheus with Docker](https://stefanprodan.com/2016/a-monitoring-solution-for-docker-hosts-containers-and-containerized-services/)
-
----
-
 # Demo
 
 ---
@@ -173,13 +167,13 @@ Note:
 - Prelert (Part of elastic)
 
 Note:
-We discussed 4 levels of metrics - FT can correlate them together
-FT build on top of Prometheus
-FT uses the Kubernetes topology to automatically group and present your metrics. 
-FT uses tagging strategies to correlate and aggregate metrics across all four layers. 
-FT provides adaptive thresholding and anomaly detection on each metric individually but also aggregated across the Kubernetes topology.  
-We add machine learning to understand metric relationships between layers and across the topology
-Those relationships allow us to provide actionable alerts not just warn when anomalies come through
+- We discussed 4 levels of metrics - FT can correlate them together
+- FT build on top of Prometheus
+- FT uses the Kubernetes topology to automatically group and present your metrics. 
+- FT uses tagging strategies to correlate and aggregate metrics across all four layers. 
+- FT provides adaptive thresholding and anomaly detection on each metric individually but also aggregated across the Kubernetes topology.  
+- We add machine learning to understand metric relationships between layers and across the topology
+- Those relationships allow us to provide actionable alerts not just warn when anomalies come through
 
 ---
 
@@ -194,12 +188,14 @@ Just remember what we mentioned earlier
 
 ---
 
-## Docker recommended 
-### Ecosystem technology partner (ETP)
+## Resources
+- [Prometheus Docs](https://prometheus.io/docs/introduction/overview/)
+- [Prometheus with Docker](https://stefanprodan.com/2016/a-monitoring-solution-for-docker-hosts-containers-and-containerized-services/)
 
-- [AppDynamics](http://community.appdynamics.com/t5/eXchange-Community-AppDynamics/Docker-Monitoring-Extension/idi-p/14749)
-- [Datadog](https://www.datadoghq.com/)
-- [New Relic](https://blog.newrelic.com/2015/05/06/docker-support-2/)
-- [Scout](https://scoutapp.com/)
-- [SignalFx](http://blog.signalfx.com/signalfx-is-proud-to-join-the-docker-ecosystem-technology-partner-program)
-- [Sysdig](https://sysdig.com/distributed-container-monitoring-sysdig-cloud-revolution/)
+- Docker recommended (Ecosystem technology partner (ETP))
+   - [AppDynamics](http://community.appdynamics.com/t5/eXchange-Community-AppDynamics/Docker-Monitoring-Extension/idi-p/14749)
+   - [Datadog](https://www.datadoghq.com/)
+   - [New Relic](https://blog.newrelic.com/2015/05/06/docker-support-2/)
+   - [Scout](https://scoutapp.com/)
+   - [SignalFx](http://blog.signalfx.com/signalfx-is-proud-to-join-the-docker-ecosystem-technology-partner-program)
+   - [Sysdig](https://sysdig.com/distributed-container-monitoring-sysdig-cloud-revolution/)
